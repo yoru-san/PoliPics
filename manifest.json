@@ -7,7 +7,7 @@
 
   "browser_action": {
     "default_icon": "images/Polipics.png",
-    "default_popup": "formulaire.html"
+    "default_popup": "debut.html"
   },
   "permissions": [
     "activeTab",
