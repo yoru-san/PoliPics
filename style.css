@@ -9,13 +9,13 @@ h1 {
 }
 
 .questions{
-  border: 2px solid #a1a1a1;
+    border: 2px solid #a1a1a1;
     padding: 10px 40px;
     background: #dddddd;
     border-radius: 25px;
-    text-align: center;
-    }
-
+    max-width:500px;
+    margin: auto;
+  }
 body {
     text-align: center;
     background: url("images/seigaiha.png");
