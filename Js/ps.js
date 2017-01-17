@@ -2,10 +2,11 @@
   //FN
   var main = function($) {
 
-    var self = $.nCage = new function(){};
+    var self = $.polopics = new function(){};
 
     $.extend(self, {
-      nCageImgs : [
+      polopicsImgs : [
+        /*Hollande*/
         "http://institutdeslibertes.org/wp-content/uploads/2015/09/french-president-francois-hollande-might-give-up.jpg",
         "http://www.telegraph.co.uk/content/dam/news/2016/07/13/hollande_2661326b-xlarge_trans%2B%2BpJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg",
         "https://cdnfr1.img.sputniknews.com/images/102662/32/1026623274.jpg",
@@ -16,6 +17,7 @@
         "http://blog.gaborit-d.com/wp-content/uploads/2013/09/parodies-hollande-rentree-afp-2.jpg",
         "http://www.atlantico.fr/sites/atlantico.fr/files/styles/une/public/images/2015/04/politico-scanner-solo.jpg",
         "http://i-cms.linternaute.com/image_cms/original/10258146-francois-hollande-volte-face-ideologique-sur-la-jungle-de-calais.jpg",
+        /*Valls*/
         "http://www.polemia.com/wp-content/uploads/2015/05/1-Valls-paroles.jpg",
         "http://img.over-blog-kiwi.com/1/42/10/09/20150318/ob_fcbbcc_valls-bilan.png",
         "http://img.humanite.fr/sites/default/files/images/valls3005_0.jpg",
@@ -26,6 +28,7 @@
         "http://www.delitdimages.org/wp-content/uploads/2014/05/valls.jpg",
         "http://o.aolcdn.com/dims-shared/dims3/GLOB/legacy_thumbnail/630x315/format/jpg/quality/85/http%3A%2F%2Fi.huffpost.com%2Fgen%2F4697664%2Fimages%2Fn-MANUEL-VALLS-628x314.jpg",
         "http://cdn1-europe1.new2.ladmedia.fr/var/europe1/storage/images/le-lab/manuel-valls-et-des-ministres-ne-se-cachent-meme-plus-pour-critiquer-emmanuel-macron-2797603/28027258-1-fre-FR/Manuel-Valls-et-des-ministres-ne-se-cachent-meme-plus-pour-critiquer-Emmanuel-Macron.jpg",
+        /*Cazeneuve*/
         "http://s1.lprs1.fr/images/2016/09/15/6122739_azeneuve_1000x625.jpg",
         "http://www.challenges.fr/assets/img/2013/03/27/cover-r4x3w1000-57988092d2b90-portrait-cazeneuve.jpg",
         "http://media.rtl.fr/cache/abQWJbAfa8R7DujfSKZslA/795v530-0/online/image/2015/0220/7776680497_bernard-cazeneuve-lors-d-un-discours.jpg",
@@ -78,7 +81,7 @@
 
     //Run on jQuery ready
     $(function(){
-      self.handleImages(self.nCageImgs, 3000);
+      self.handleImages(self.polopicsImgs, 3000);
     });
   };
 
