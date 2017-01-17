@@ -13,8 +13,8 @@ h1 {
     background: #dddddd;
     width: 300px;
     border-radius: 25px;
-    text-align: center;
-}
-body{
-  text-align: center;
-}
+  }
+
+  .button {
+    align-items: center;
+  }
