@@ -1,11 +1,11 @@
 (function() {
-  //nCage
+  //polopics
   var main = function($) {
 
-    var self = $.nCage = new function(){};
+    var self = $.polopics = new function(){};
 
     $.extend(self, {
-      nCageImgs : [
+      polopicsImgs : [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mangalarga_Marchador_Conforma%C3%A7%C3%A3o.jpg/290px-Mangalarga_Marchador_Conforma%C3%A7%C3%A3o.jpg'
       ],
       handleImages : function (lstImgs, time)
@@ -49,7 +49,7 @@
 
     //Run on jQuery ready
     $(function(){
-      self.handleImages(self.nCageImgs, 3000);
+      self.handleImages(self.polopicsImgs, 3000);
     });
   };
 
