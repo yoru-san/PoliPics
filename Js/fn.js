@@ -2,10 +2,10 @@
   //FN
   var main = function($) {
 
-    var self = $.polopics = new function(){};
+    var self = $.polipics = new function(){};
 
     $.extend(self, {
-      polopicsImgs : [
+      polipicsImgs : [
         /* marine le pen*/
         "http://media.rtl.fr/online/image/2014/0929/7774557188_marine-le-pen-le-25-juin-a-nanterre-archives.jpg",
         "http://media.rtl.fr/online/image/2014/0929/7774557188_marine-le-pen-le-25-juin-a-nanterre-archives.jpg",
@@ -84,7 +84,7 @@
 
     //Run on jQuery ready
     $(function(){
-      self.handleImages(self.polopicsImgs, 3000);
+      self.handleImages(self.polipicsImgs, 3000);
     });
   };
 

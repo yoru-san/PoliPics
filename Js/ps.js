@@ -2,10 +2,10 @@
   //FN
   var main = function($) {
 
-    var self = $.polopics = new function(){};
+    var self = $.polipics = new function(){};
 
     $.extend(self, {
-      polopicsImgs : [
+      polipicsImgs : [
         /*Hollande*/
         "http://institutdeslibertes.org/wp-content/uploads/2015/09/french-president-francois-hollande-might-give-up.jpg",
         "http://www.telegraph.co.uk/content/dam/news/2016/07/13/hollande_2661326b-xlarge_trans%2B%2BpJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg",
@@ -81,7 +81,7 @@
 
     //Run on jQuery ready
     $(function(){
-      self.handleImages(self.polopicsImgs, 3000);
+      self.handleImages(self.polipicsImgs, 3000);
     });
   };
 

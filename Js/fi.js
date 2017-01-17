@@ -2,10 +2,10 @@
   //FN
   var main = function($) {
 
-    var self = $.polopics = new function(){};
+    var self = $.polipics = new function(){};
 
     $.extend(self, {
-      polopicsImgs : [
+      polipicsImgs : [
         /*Mélenchon*/
         "http://www.francetvinfo.fr/image/759ujl2rb-7891/1500/843/11056201.jpg",
         "http://www.lepoint.fr/images/2016/12/20/6492437lpw-6496497-article-francevotepg-jpg_3974542_660x281.jpg",
@@ -68,7 +68,7 @@
 
     //Run on jQuery ready
     $(function(){
-      self.handleImages(self.polopicsImgs, 3000);
+      self.handleImages(self.polipicsImgs, 3000);
     });
   };
 
