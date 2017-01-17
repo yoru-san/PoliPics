@@ -5,16 +5,18 @@ h1 {
 
 .question {
   font-size: 30px;
+  text-align: center;
 }
 
 .questions{
-    border: 2px solid #a1a1a1;
+  border: 2px solid #a1a1a1;
     padding: 10px 40px;
     background: #dddddd;
-    width: 300px;
     border-radius: 25px;
-  }
+    text-align: center;
+    }
 
-  .button {
-    align-items: center;
+body {
+    text-align: center;
+    background: url("images/seigaiha.png");
   }
