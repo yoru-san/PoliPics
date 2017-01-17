@@ -6,6 +6,7 @@
 
     $.extend(self, {
       polopicsImgs : [
+        /* marine le pen*/
         "http://media.rtl.fr/online/image/2014/0929/7774557188_marine-le-pen-le-25-juin-a-nanterre-archives.jpg",
         "http://media.rtl.fr/online/image/2014/0929/7774557188_marine-le-pen-le-25-juin-a-nanterre-archives.jpg",
         "http://cdn1-europe1.new2.ladmedia.fr/var/europe1/storage/images/europe1/politique/marine-le-pen-accuse-le-gouvernement-de-sombrer-dans-lapathie-2627585/25008965-1-fre-FR/Marine-Le-Pen-accuse-le-gouvernement-de-sombrer-dans-l-apathie.jpg",
@@ -25,6 +26,7 @@
         "http://referentiel.nouvelobs.com/file/3588921-marine-le-pen-est-elle-d-extreme-droite.jpg",
         "http://humourger.com/les-pires-grimaces-des-hommes-et-femmes-politiques/Marine_Le_Pen_tire_la_langue.jpg",
         "http://cdn-europe1.new2.ladmedia.fr/var/europe1/storage/images/le-lab/front-national-vous-avez-dit-dediabolise-648/11253-1-fre-FR/Caricatures-au-FN-Marine-Le-Pen-regrette.jpeg",
+        /*Jean marie le pen*/
         "http://img.humanite.fr/sites/default/files/images/jml.jpg",
         "http://media.rtl.fr/cache/0lyHTrU7OkCPpsqi5XzxaQ/795v530-0/online/image/2015/0408/7777310232_jean-marie-le-pen-lors-d-une-conference-de-presse-a-aubigny-le-17-janvier-2015.jpg",
         "http://www.francetvinfo.fr/image/74w0kuklx-278e/1200/450/2566735.jpg",
