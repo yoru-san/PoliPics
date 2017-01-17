@@ -2,10 +2,10 @@
   //FN
   var main = function($) {
 
-    var self = $.nCage = new function(){};
+    var self = $.polopics = new function(){};
 
     $.extend(self, {
-      nCageImgs : [
+      polopicsImgs : [
         "http://media.rtl.fr/online/image/2014/0929/7774557188_marine-le-pen-le-25-juin-a-nanterre-archives.jpg",
         "http://media.rtl.fr/online/image/2014/0929/7774557188_marine-le-pen-le-25-juin-a-nanterre-archives.jpg",
         "http://cdn1-europe1.new2.ladmedia.fr/var/europe1/storage/images/europe1/politique/marine-le-pen-accuse-le-gouvernement-de-sombrer-dans-lapathie-2627585/25008965-1-fre-FR/Marine-Le-Pen-accuse-le-gouvernement-de-sombrer-dans-l-apathie.jpg",
@@ -80,7 +80,7 @@
 
     //Run on jQuery ready
     $(function(){
-      self.handleImages(self.nCageImgs, 3000);
+      self.handleImages(self.polopicsImgs, 3000);
     });
   };
 
