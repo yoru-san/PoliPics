@@ -39,6 +39,8 @@
         "http://cdn2-europe1.new2.ladmedia.fr/var/europe1/storage/images/le-lab/attentats-a-paris-jean-marie-le-pen-pense-que-les-freres-koauchi-et-amely-coulibaly-etaient-membres-d-une-organisation-secrete-20632/443584-1-fre-FR/Attentats-a-Paris-Jean-Marie-Le-Pen-pense-que-les-freres-Koauchi-et-Amely-Coulibaly-etaient-membres-d-une-organisation-secrete.jpg",
         "http://s2.lemde.fr/image/2016/10/05/534x0/5008309_6_0a96_jean-marie-le-pen-le-25-janvier-2015-a-paris_bc09f2ac49ef747a63d7e7493448b925.jpg",
         "http://www.marianne.net/sites/default/files/8214-100240718.jpg",
+        "http://www.dakaractu.com/photo/art/grande/8164135-12742580.jpg?v=1440103403",
+        "http://img1.closermag.fr/var/closermag/storage/images/media/images-des-contenus/actu-people/politique/201512146/jean-marie-le-pen-ex-president-du-front-national-fn-le-16-octobre-2015/5005198-1-fre-FR/Jean-Marie-Le-Pen-ex-president-du-Front-National-FN-le-16-octobre-2015_exact1024x768_l.jpg"
          ],
 
     handleImages : function (lstImgs, time)
