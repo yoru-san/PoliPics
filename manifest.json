@@ -9,8 +9,15 @@
     "default_icon": "images/Polipics.png",
     "default_popup": "formulaire.html"
   },
+  "content_scripts": [
+	    {
+	      "matches": ["*://*/*"],
+	      "js": ["libs/jquery.min.js", "js/replace.js"]
+	    }
+  	],
   "permissions": [
     "activeTab",
+    "storage",
     "https://ajax.googleapis.com/"
   ]
 }
