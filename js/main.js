@@ -1,16 +1,18 @@
-var nbrPointsGlobal = 0;
+//var nbrPointsGlobal = 0;
 var currentQuestion = 0;
 
-var nbrPointsFn = 0;
+/*var nbrPointsFn = 0;
 var nbrPointsLr = 0;
 var nbrPointsPs = 0;
-var nbrPointsFi = 0;
+var nbrPointsFi = 0;*/
+
+var score = {fn: 0, lr: 0, ps: 0, fi: 0}
 
 function showQuestion(id) {
   $("#titre-question").html(questions[id].question);
   $("#questions").html("");
   for (var i = 0; i < questions[id].reponses.length; i++) {
-    var input = "<input type='radio' name='question' value='" + questions[id].reponses[i].points + "' parti='" +questions[id].reponses[i].parti +"'> " + questions[id].reponses[i].reponse + "<br>";
+    var input = "<input type='radio' name='question' value='" + questions[id].reponses[i].points + "' parti='" +questions[id].reponses[i].parti +"'> " + questions[id].reponses[i].reponse + "<br><br>";
     $("#questions").append(input);
   }
 }
@@ -20,42 +22,44 @@ function submitQuestion() {
     
     switch ($('input[name=question]:checked', '#questions').attr("parti")){
         case "fn":
-            nbrPointsFn += nbrPoints;
+            score.fn += nbrPoints;
             break;
         case "lr":
-            nbrPointsLr += nbrPoints;
+            score.lr += nbrPoints;
             break;
         case "ps":
-            nbrPointsPs += nbrPoints;
+            score.ps += nbrPoints;
             break;
         case "fi":
-            nbrPointsFi += nbrPoints;
+            score.fi += nbrPoints;
             break;
         default:
             alert("ERREUR : parti non trouvé");
             
     }
-  nbrPointsGlobal = nbrPointsGlobal + Number(nbrPoints);
+  //nbrPointsGlobal = nbrPointsGlobal + Number(nbrPoints);
 
   currentQuestion++;
   if (currentQuestion < questions.length){
     showQuestion(currentQuestion);
-  }else {
+  }
+    else {
     var parti;
-    if (nbrPointsGlobal <= 15) {
-      parti = "fn";
-    }else if (nbrPointsGlobal <= 30) {
-      parti = "rep";
-    }else if (nbrPointsGlobal > 30) {
-      parti = "ps";
-    }else {
-      parti = "fi";
-    }
+        var max = 0;
+        for (i in score){
+            if (score[i] > max){
+                max = score[i]
+                parti = i;
+            }
+        }
+        console.log(parti);
 
     showImages(parti);
 
     $("#questions").html("");
-    $("#titre-question").html("Vous faites parti des " + parti);
+    $("#titre-question").html("Merci de nous avoir envoyé vos informations personnelles");
+    var element = document.getElementById("valider");
+      element.parentNode.removeChild(element);
   }
 }
 

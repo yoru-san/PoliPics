@@ -19,12 +19,12 @@ var questions = [
     ]
   },
   {
-    question: "L’homosexualité devrait être mieux acceptée par la société",
+    question: "Comment réduire l'insécurité?",
     reponses: [
-      {reponse: "En tant que LGBT trans-hélicoptère-manivelle-genderfluid polysexuel-lle, je trouve ta question offensante", points: 10, parti: "fi"},
-      {reponse: "Oui", points: 10, parti: "ps"},
-      {reponse: "Non", points: 10, parti: "lr"},
-        {reponse: "Au bûcher", points: 10, parti: "fn"}
+      {reponse: "Plus de flics, plus de peines, plus de prisons (pour ces sales pauvres)", points: 10, parti: "lr"},
+      {reponse: "En tabassant les flics", points: 10, parti: "fi"},
+      {reponse: "Avec une meilleure intégrations des immigrés (sauf chez moi svp)", points: 10, parti: "ps"},
+        {reponse: "Les arabes dehors!", points: 10, parti: "fn"}
     ]
   },
     {

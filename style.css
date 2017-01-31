@@ -1,22 +1,42 @@
 
 h1 {
   color : blue;
+    font-size: 20px;
 }
 
 .question {
   font-size: 20px;
   text-align: center;
+
 }
 
-.questions{
+.radio{
+    margin 20px;
+}
+
+
+#questions{
+
+    
+    padding-top: 20px;
+
+    margin: auto;
+  }
+
+body {
+    text-align: center;
+    background: url("images/seigaiha.png");
+  }
+
+#valider{
+    margin-top: 20px;
+}
+
+s{
     border: 2px solid #a1a1a1;
-    padding: 10px 40px;
+    padding: 10px;
     background: #dddddd;
     border-radius: 25px;
     max-width:500px;
     margin: auto;
-  }
-body {
-    text-align: center;
-    background: url("images/seigaiha.png");
   }

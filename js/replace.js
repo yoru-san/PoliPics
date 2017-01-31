@@ -75,7 +75,7 @@
             "http://s-www.republicain-lorrain.fr/images/9D5B334C-0870-4FD6-969E-CAE7F157DF53/LRL_v0_03/bernard-cazeneuve-ne-gere-pas-lui-meme-sonc-ompte-twitter-a-fait-savoir-son-equipe-photo-afp-1463408416.jpg",
             "http://md1.libe.com/photo/520421-le-ministre-delegue-au-budget-bernard-cazeneuve-le-22-mai-2013-a-caen.jpg?modified_at=1369992045&width=750"
           ],
-          rep: [
+          lr: [
             //Nicolas Sarkozy
             "http://www.dreuz.info/wp-content/uploads/2016/09/sarkozy.jpg",
             "http://referentiel.nouvelobs.com/file/rw765h740/15512501-sarkozy-intouchable-pourquoi-nous-sommes-tous-coupables.jpg",
@@ -104,7 +104,8 @@
             "https://media1.giphy.com/media/3o7TKDbNOfAntlCVZm/200.gif#18",
             "https://media1.giphy.com/media/3o7TKwKC8W7gUmFnxe/200.gif#20",
             "https://media2.giphy.com/media/l0MYIYA1DYi4Lxwvm/200.gif#48",
-            "https://media.giphy.com/media/2QIYRKSgfY1ig/giphy.gif", //Francois Fillon
+            "https://media.giphy.com/media/2QIYRKSgfY1ig/giphy.gif", 
+              //Francois Fillon
             "http://cdn-lejdd.ladmedia.fr/var/lejdd/storage/images/media/images/politique/francois-fillon-a-demande-a-ses-soutiens-de-se-preparer/12696484-1-fre-FR/Francois-Fillon-a-demande-a-ses-soutiens-de-se-preparer.jpg",
             "http://beninmondeinfos.com/images/FillonFranois.jpg",
             "https://comptoirdotorg.files.wordpress.com/2016/11/fillon.jpg",
@@ -164,7 +165,7 @@
 					else
 					{
 						//Replace when loaded
-						$(item).load(function(){
+						$(item).on('load', function(){
 							//Prevent 'infinite' loop
 							if($.inArray($(item).attr('src'), lstImgs) == -1)
 							{
