@@ -1,17 +1,40 @@
 var nbrPointsGlobal = 0;
 var currentQuestion = 0;
 
+var nbrPointsFn = 0;
+var nbrPointsLr = 0;
+var nbrPointsPs = 0;
+var nbrPointsFi = 0;
+
 function showQuestion(id) {
   $("#titre-question").html(questions[id].question);
   $("#questions").html("");
   for (var i = 0; i < questions[id].reponses.length; i++) {
-    var input = "<input type='radio' name='question' value='" + questions[id].reponses[i].points + "'> " + questions[id].reponses[i].reponse + "<br>";
+    var input = "<input type='radio' name='question' value='" + questions[id].reponses[i].points + "' parti='" +questions[id].reponses[i].parti +"'> " + questions[id].reponses[i].reponse + "<br>";
     $("#questions").append(input);
   }
 }
 
 function submitQuestion() {
   var nbrPoints = $('input[name=question]:checked', '#questions').val();
+    
+    switch ($('input[name=question]:checked', '#questions').attr("parti")){
+        case "fn":
+            nbrPointsFn += nbrPoints;
+            break;
+        case "lr":
+            nbrPointsLr += nbrPoints;
+            break;
+        case "ps":
+            nbrPointsPs += nbrPoints;
+            break;
+        case "fi":
+            nbrPointsFi += nbrPoints;
+            break;
+        default:
+            alert("ERREUR : parti non trouvé");
+            
+    }
   nbrPointsGlobal = nbrPointsGlobal + Number(nbrPoints);
 
   currentQuestion++;
