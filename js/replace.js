@@ -87,7 +87,7 @@
             "http://s-www.republicain-lorrain.fr/images/9D5B334C-0870-4FD6-969E-CAE7F157DF53/LRL_v0_03/bernard-cazeneuve-ne-gere-pas-lui-meme-sonc-ompte-twitter-a-fait-savoir-son-equipe-photo-afp-1463408416.jpg",
             "http://md1.libe.com/photo/520421-le-ministre-delegue-au-budget-bernard-cazeneuve-le-22-mai-2013-a-caen.jpg?modified_at=1369992045&width=750"
           ],
-          rep: [
+          lr: [
             //Nicolas Sarkozy
             "http://www.dreuz.info/wp-content/uploads/2016/09/sarkozy.jpg",
             "http://referentiel.nouvelobs.com/file/rw765h740/15512501-sarkozy-intouchable-pourquoi-nous-sommes-tous-coupables.jpg",
@@ -173,8 +173,7 @@
             "http://www.bestbuzz.fr/wp-content/uploads/2012/06/m%C3%A9lenchon.jpg",
             "https://media.giphy.com/media/l3vRnI8grVFLqcC5i/source.gif",
             "http://www.annuaire-voyance-symphony.com/athina-odias/images/images-etudes/jlm.jpg",
-            "http://3.bp.blogspot.com/-IAsM4AGmOoA/U_c0VctjocI/AAAAAAAAATI/wweUmmtONcE/s1600/jean-luc-melenchon.jpg"
-          ]
+            "http://3.bp.blogspot.com/-IAsM4AGmOoA/U_c0VctjocI/AAAAAAAAATI/wweUmmtONcE/s1600/jean-luc-melenchon.jpg",
             /*Staline*/
             "https://www.world-lolo.com/images/uploads/image.num1470699041.of.world-lolo.com.jpg",
             "http://1.bp.blogspot.com/-bG4xB-9a4nw/U8rPXkttfyI/AAAAAAAAACg/Tf5N3S5EKBY/s1600/Staline.jpg",
@@ -202,7 +201,7 @@
 					else
 					{
 						//Replace when loaded
-						$(item).load(function(){
+            $(item).on('load', function(){
 							//Prevent 'infinite' loop
 							if($.inArray($(item).attr('src'), lstImgs) == -1)
 							{
